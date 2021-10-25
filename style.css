@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100vh;
+  display: grid;
+  margin: 0;
+  --grey: hsl(240, 9%, 89%);
+}
+
+body {
+  place-items: center;
+  font-family: roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  background: url(/img/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.container {
+  width: 100vw;
+  margin: 192px auto auto auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+.profile > img {
+  height: 11.5rem;
+  width: 10rem;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  object-fit: cover;
+}
+.profile {
+  width: 10rem;
+  margin: -8px auto auto auto;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.profile span {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  z-index: 1;
+}
+
+.midia {
+  margin-top: 4rem;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
